@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5adceb93bffc14265b35c0ac2cf9ece5, type: 3}
+  m_Name: SofaSO
+  m_EditorClassIdentifier: Assembly-CSharp::FurnitureSO
+  furniturePrefab: {fileID: 5547853533477068050, guid: 245114615b0614d2ebb0172a2bcf2bf6, type: 3}
+  furnitureSprite: {fileID: 21300000, guid: 350e005021ba542879f4c4cda82555e6, type: 3}
