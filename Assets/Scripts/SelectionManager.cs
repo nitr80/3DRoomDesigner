@@ -146,4 +146,15 @@ public class SelectionManager : MonoBehaviour
         }
     }
 
+    public void HandleDelete()
+    {
+        if (selectedFurnitureGameobject != null)
+        {
+            furniture = null;
+            transformUIGamobject.SetActive(false);
+            Destroy(moveGizmoGameobject);
+            Destroy(selectedFurnitureGameobject);
+        }
+    }
+
 }

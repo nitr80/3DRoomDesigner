@@ -8,6 +8,8 @@ public class AddFurniture : MonoBehaviour
     [SerializeField]
     private Button spawnFurnitureButton;
     [SerializeField]
+    private Button deleteFurnitureButton;
+    [SerializeField]
     private Button[] furnitureTypeButtonArray;
     [SerializeField]
     private Image[] furnitureTypeImageArray;
@@ -19,6 +21,7 @@ public class AddFurniture : MonoBehaviour
     private void Start()
     {
         spawnFurnitureButton.onClick.AddListener(SpawnFurniture);
+        deleteFurnitureButton.onClick.AddListener(DeleteFurniture);
 
         SetDefaultButtonBackgroundColor();
 
@@ -57,6 +60,11 @@ public class AddFurniture : MonoBehaviour
             GameObject.Instantiate(selectedFurniture);
             SelectionManager.Instance.HandleDeselect();
         }
+    }
+
+    private void DeleteFurniture()
+    {
+        SelectionManager.Instance.HandleDelete();
     }
 
 
