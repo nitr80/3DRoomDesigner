@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 public class SelectionManager : MonoBehaviour
 {
-    public static SelectionManager Instance;
+    public static SelectionManager Instance  { get; private set; }
 
     [SerializeField]
     private Camera userCamera;

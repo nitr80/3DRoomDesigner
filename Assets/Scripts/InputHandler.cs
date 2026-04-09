@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class InputHandler : MonoBehaviour
 {
-    public static InputHandler Instance;
+    public static InputHandler Instance { get; private set; }
 
     public event EventHandler<MouseClickEventArgs> OnMouseClick;
     public event EventHandler<DefaultVector2EventArgs> OnWASDKeyPress;
